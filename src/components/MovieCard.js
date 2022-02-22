@@ -5,7 +5,7 @@ import star from '../assets/icon/star.svg'
 
 function MovieCard(movie) {
   return (
-    <Link to="#">
+    <Link to="/detail">
       <div className='w-48 relative drop-shadow-lg rounded-lg'>
           <img src={movie.movie.poster} alt="" width="100%" height="100%" />
           <div className={`${movie.movie.poster ? 'absolute' : ''} bottom-0 bg-gradient-to-t from-black`}>

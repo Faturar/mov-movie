@@ -11,6 +11,7 @@ import MovieCard from '../components/MovieCard'
 // img 
 import headerImg from '../assets/img/header-detail.jpg'
 import poster from '../assets/img/poster-3.png'
+import star from '../assets/icon/star.svg'
 
 function detail() {
     return (
@@ -22,15 +23,26 @@ function detail() {
             </header>
 
             <main>
-                <div className='grid grid-cols-3'>
+                <div className='grid grid-cols-4'>
                     {/* Poster */}
                     <div className='w-72 -mt-36 ml-16'>
                         <img src={poster} alt="" className='w-64' />
                     </div>
 
                     {/* Description section */}
-                    <div>
-                        <h1>Encanto</h1>
+                    <div className='col-span-3 pl-14'>
+                        <h1 className='text-5xl mt-8'>Encanto</h1>
+                        <div className='inline-flex mt-4'>
+                            <div className='inline-flex'>
+                                 <img src={star} alt="" className='mr-2' />
+                                 <span>7.8/10</span>
+                            </div>
+                            <span className='ml-6'>1h 42min</span>
+                            <span className='ml-6'>Animation, Comedy, Family, Fantasy</span>
+                            <span className='ml-6'>2021</span>
+                        </div>
+                        <p className='mr-16'>
+                            The tale of an extraordinary family, the Madrigals, who live hidden in the mountains of Colombia, in a magical house, in a vibrant town, in a wondrous, charmed place called an Encanto. The magic of the Encanto has blessed every child in the family with a unique gift from super strength to the power to healevery child except one, Mirabel. But when she discovers that the magic surrounding the Encanto is in danger, Mirabel decides that she, the only ordinary Madrigal, might just be her exceptional family's last hope.</p>
                     </div>
                 </div>
                 
