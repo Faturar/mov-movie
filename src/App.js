@@ -12,6 +12,7 @@ import "swiper/css/navigation";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/home'
+import Detail from './pages/detail'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/detail" element={<Detail />} />
         </Routes>
         <Footer />
       </BrowserRouter>
