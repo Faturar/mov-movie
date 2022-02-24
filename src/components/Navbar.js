@@ -10,14 +10,16 @@ function Navbar() {
     <nav className="container relative px-8 lg:px-0 mx-auto my-8 lg:mt-10">
         <div className="flex justify-between items-center">
           <div className='flex-1'>
-            <img src={logo} alt="Logo Moe Movie" width="40px" />
+            <Link to="/">
+              <img src={logo} alt="Logo Moe Movie" width="40px" />
+            </Link>
           </div>
           
           {/* Desktop */}
           <div className="flex-1 hidden lg:flex justify-end">
               <ul className="space-x-12 mr-20 flex text-white">
                 <li>
-                  <Link to="#">Popular</Link>
+                  <Link to="#popular">Popular</Link>
                 </li>
                 <li>
                   <Link to="#">Top Rated</Link>

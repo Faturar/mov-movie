@@ -75,7 +75,7 @@ function home() {
             <main>
 
                 {/* Popular Movies Section */}
-                <section className='mt-36'>
+                <section className='mt-36' id='popular'>
                     <h2 className='text-3xl font-medium'>Popular Movies</h2>
                     
                     <Swiper
@@ -96,7 +96,7 @@ function home() {
                 </section>
                 
                 {/* Top Rated Movies Section */}
-                <section className='mt-20'>
+                <section className='mt-20' id='top-rated'>
                     <h2 className='text-3xl font-medium'>Top Rated Movies</h2>
                     
                     <Swiper
@@ -117,7 +117,7 @@ function home() {
                 </section>
 
                 {/* Explore */}
-                <section className='mt-20'>
+                <section className='mt-20' id='explore'>
                     <h2 className='text-3xl font-medium'>Explore</h2>
                         
                     <div className="mt-16 grid grid-cols-6 auto-rows-auto gap-6">
