@@ -13,6 +13,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/home'
 import Detail from './pages/detail'
+import Search from './pages/search'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/detail" element={<Detail />} />
+          <Route path="/search" element={<Search />} />
         </Routes>
         <Footer />
       </BrowserRouter>

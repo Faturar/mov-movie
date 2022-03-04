@@ -15,12 +15,10 @@ import eclipse2 from '../assets/img/eclipse2.svg'
 import eclipse3 from '../assets/img/eclipse3.svg'
 import eclipse4 from '../assets/img/eclipse4.svg'
 import eclipse5 from '../assets/img/eclipse5.svg'
-import eclipse6 from '../assets/img/eclipse6.svg'
-import eclipse7 from '../assets/img/eclipse7.svg'
 
 function home() {
     return (
-        <div className='container mx-auto text-white'>
+        <div className='container px-6 xl:px-0 mx-auto text-white'>
 
             <div className='absolute top-0 right-0 -z-10'>
                 <img src={eclipse1} alt="" />
@@ -42,48 +40,55 @@ function home() {
                 <img src={eclipse5} alt="" />
             </div>
 
-            <div className='absolute left-0 -z-10' style={{top: '2000px'}}>
-                <img src={eclipse6} alt="" />
-            </div>
-
-            <div className='absolute right-0 -z-10' style={{top: '2300px'}}>
-                <img src={eclipse7} alt="" />
-            </div>
-
             {/* Header */}
-            <header className='flex items-center mx-auto w-11/12'>
+            <header className='flex lg:flex-row flex-col items-center relative mx-auto w-11/12'>
                 {/* Header Image */}
                 <div className='flex-1'>
-                    <img src={headerImg} alt="film list" width="520" />
+                    <img src={headerImg} alt="film list" className='w-10/12 blur-sm lg:blur-none opacity-40 lg:opacity-100 mx-auto' />
                 </div>
 
                 {/* Header Content */}
-                <div className='flex-1'>
-                    <h1 className='text-6xl w-11/12 font-semibold -mt-8'>
+                <div className='flex-1 absolute top-20 md:top-48 lg:top-0 lg:relative'>
+                    <h1 className='w-11/12 mx-auto lg:mx-0 leading-tight lg:leading-none text-5xl md:text-6xl lg:text-left text-center font-semibold lg:-mt-8'>
                         More Than <span className='bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-fuchsia-600'>10,000+</span> Movies  You Can Find Here
                     </h1>
 
-                    <div className='flex mt-16 text-white'>
+                    <div className='flex justify-center lg:justify-start mt-16 text-white'>
                         <div className='w-8/12 rounded-lg border border-transparent bg-clip-border bg-gradient-to-r from-blue-600 to-fuchsia-600'>
-                            <input type="text" placeholder='Movie Name or Keyword' className='px-4 w-full h-full focus:outline-none placeholder:text-white placeholder:font-normal bg-neutral-800 rounded-lg' />    
+                            <input type="text" placeholder='Movie Name or Keyword' className='px-3 lg:px-4 w-full h-full text-sm lg:text-base focus:outline-none placeholder:text-white placeholder:font-normal bg-neutral-800 rounded-lg' />    
                         </div>
-                        <button className='px-8 py-3 rounded-lg ml-4 bg-gradient-to-r from-blue-600 to-fuchsia-600'>Search</button>
+                        <button className='py-2 px-4 md:px-8 md:py-3 rounded-lg ml-4 bg-gradient-to-r from-blue-600 to-fuchsia-600'>Search</button>
                     </div>
                 </div>
             </header>
 
             <main>
-
                 {/* Popular Movies Section */}
-                <section className='mt-36' id='popular'>
-                    <h2 className='text-3xl font-medium'>Popular Movies</h2>
+                <section className='mt-36 md:mt-10 lg:mt-12 lg:pt-14' id='popular'>
+                    <h2 className='text-2xl md:text-3xl text-center font-medium'>Popular Movies</h2>
                     
                     <Swiper
-                        className='mt-16'
-                        spaceBetween={50}
-                        slidesPerView={6}
+                        className='mt-12 lg:mt-16'
                         navigation={true}
                         modules={[Navigation]}
+                        breakpoints={{
+                            0: {
+                                slidesPerView: 3,
+                                spaceBetweenSlides: 10
+                            },
+                            768: {
+                                slidesPerView: 4,
+                                spaceBetweenSlides: 20
+                            },
+                            1024: {
+                                slidesPerView: 5,
+                                spaceBetweenSlides: 50
+                            },
+                            1280: {
+                                slidesPerView: 6,
+                                spaceBetweenSlides: 50
+                            },
+                        }}
                     >
                         {movies.map((movie, index) => {
                             return (
@@ -96,15 +101,31 @@ function home() {
                 </section>
                 
                 {/* Top Rated Movies Section */}
-                <section className='mt-20' id='top-rated'>
-                    <h2 className='text-3xl font-medium'>Top Rated Movies</h2>
+                <section className='pt-12 lg:mt-8 lg:pt-12' id='top-rated'>
+                    <h2 className='text-2xl md:text-3xl text-center font-medium'>Top Rated Movies</h2>
                     
                     <Swiper
-                        className='mt-16'
-                        spaceBetween={50}
-                        slidesPerView={6}
+                        className='mt-12 lg:mt-16'
                         navigation={true}
                         modules={[Navigation]}
+                        breakpoints={{
+                            0: {
+                                slidesPerView: 3,
+                                spaceBetweenSlides: 10
+                            },
+                            768: {
+                                slidesPerView: 4,
+                                spaceBetweenSlides: 20
+                            },
+                            1024: {
+                                slidesPerView: 5,
+                                spaceBetweenSlides: 50
+                            },
+                            1280: {
+                                slidesPerView: 6,
+                                spaceBetweenSlides: 50
+                            },
+                        }}
                     >
                         {movies.map((movie, index) => {
                             return (
@@ -117,10 +138,10 @@ function home() {
                 </section>
 
                 {/* Explore */}
-                <section className='mt-20' id='explore'>
-                    <h2 className='text-3xl font-medium'>Explore</h2>
-                        
-                    <div className="mt-16 grid grid-cols-6 auto-rows-auto gap-6">
+                <section className='pt-12 lg:mt-8 lg:pt-12' id='explore'>
+                    <h2 className='text-2xl md:text-3xl text-center font-medium'>Explore</h2>
+        
+                    <div className="mt-12 lg:mt-16 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 auto-rows-auto">
                         {movies.map((movie, index) => {
                             return (
                                 <MovieCard key={index} movie={movie} />
@@ -128,8 +149,8 @@ function home() {
                         })}
                     </div>
                     
-                    <div className='w-full flex justify-center mt-20'>
-                        <button className='px-6 py-3 rounded-lg mx-auto bg-gradient-to-r from-blue-600 to-fuchsia-600'>Show More</button>
+                    <div className='w-full flex justify-center mt-12 lg:mt-20'>
+                        <button className='px-6 py-3 rounded-lg mx-auto bg-gradient-to-r from-blue-600 to-fuchsia-600 text-sm lg:text-base'>Show More</button>
                     </div>
                 </section>
             </main>

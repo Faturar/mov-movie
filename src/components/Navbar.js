@@ -1,63 +1,39 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
+import {Link as Scroll} from 'react-scroll'
+import {Link} from 'react-router-dom'
 
 import logo from '../assets/img/logo.png';
 import searchIcon from '../assets/icon/search.svg';
-import burgerIcon from '../assets/icon/burger.svg';
 
 function Navbar() {
+  const location = useLocation();
+
   return (
-    <nav className="container relative px-8 lg:px-0 mx-auto my-8 lg:mt-10">
+    <nav className="container relative px-6 xl:px-0 mx-auto my-8 lg:mt-10">
         <div className="flex justify-between items-center">
-          <div className='flex-1'>
+          <div className=''>
             <Link to="/">
               <img src={logo} alt="Logo Moe Movie" width="40px" />
             </Link>
           </div>
           
           {/* Desktop */}
-          <div className="flex-1 hidden lg:flex justify-end">
-              <ul className="space-x-12 mr-20 flex text-white">
-                <li>
-                  <Link to="#popular">Popular</Link>
-                </li>
-                <li>
-                  <Link to="#">Top Rated</Link>
-                </li>
-                <li>
-                  <Link to="#">Explore</Link>
-                </li>
-              </ul>
-              <img src={searchIcon} alt="Search Icon" width="24px" />
-          </div>
-
-          {/* Mobile */}
-          <div className="lg:hidden absolute top-0 right-0">
-            <ul className="flex flex-col text-white">
-              <li>
-                <Link to="#">Popular</Link>
-              </li>
-              <li>
-                <Link to="#">Top Rated</Link>
-              </li>
-              <li>
-                <Link to="#">Explore</Link>
-              </li>
-            </ul>
-            
-            {/* Search */}
-            <div className='relative inline-block bg-gray-700 rounded-lg'>
-              <div className='inline-flex px-4 py-2'>
-                <input type="text" className='bg-transparent mr-3 focus:outline-none text-white' />
-                <label htmlFor="">
-                  <img src={searchIcon} alt="Search Icon" width="24px" />
-                </label>
+          <div className="flex-1 flex items-center justify-end text-white">
+              <div className={`${location.pathname === '/' ? 'hidden lg:flex' : 'hidden'} space-x-12 mr-16`}>
+                <div className='cursor-pointer'>
+                  <Scroll to="popular" spy={true} smooth={true}>Popular</Scroll>
+                </div>
+                <div className='cursor-pointer'>
+                  <Scroll to="top-rated" spy={true} smooth={true}>Top Rated</Scroll>
+                </div>
+                <div className='cursor-pointer'>
+                  <Scroll to="explore" spy={true} smooth={true}>Explore</Scroll>
+                </div>
               </div>
-            </div>
-          </div>
-
-          <div className='flex-1 justify-end flex lg:hidden'>
-            <img src={burgerIcon} alt="Burger Icon" width="32px"/>
+              <a href="/search">
+                <img src={searchIcon} alt="" className='w-7' />
+              </a>
           </div>
         </div>
         

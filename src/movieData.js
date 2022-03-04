@@ -2,7 +2,6 @@ import posterOne from './assets/img/poster-1.png'
 import posterTwo from './assets/img/poster-2.png'
 import posterThree from './assets/img/poster-3.png'
 
-
 const movies = [
     {
         poster: posterOne,
