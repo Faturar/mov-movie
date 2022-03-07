@@ -1,12 +1,11 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import {Link as Scroll} from 'react-scroll'
-import {Link} from 'react-router-dom'
 
 import logo from '../assets/img/logo.png';
 import searchIcon from '../assets/icon/search.svg';
 
-function Navbar() {
+function Navbar({keywordData}) {
   const location = useLocation();
 
   return (
@@ -31,9 +30,11 @@ function Navbar() {
                   <Scroll to="explore" spy={true} smooth={true}>Explore</Scroll>
                 </div>
               </div>
-              <a href="/search">
-                <img src={searchIcon} alt="" className='w-7' />
-              </a>
+              <Link to="/search">
+                <button onClick={() => keywordData('')}>
+                  <img src={searchIcon} alt="" className='w-7 hover:w-8 transition-all' />
+                </button>
+              </Link>
           </div>
         </div>
         

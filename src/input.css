@@ -9,6 +9,28 @@ body {
     background-color: #000000;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: none; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #c026d3; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9f18b1; 
+  }
+
 @layer base {
     h1, h2 {
         @apply font-heading;

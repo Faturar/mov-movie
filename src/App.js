@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import './App.css';
 import {
   BrowserRouter,
@@ -5,33 +6,44 @@ import {
   Route
 } from "react-router-dom";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 // Swiper CSS
 import 'swiper/css';
 import "swiper/css/navigation";
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Home from './pages/home'
-import Detail from './pages/detail'
-import Search from './pages/search'
+import Home from './pages/Home'
+import Detail from './pages/Detail'
+import Search from './pages/Search'
+
 
 
 function App() {
+  const [keyword, setKeyword] = useState('')
+
+  const keywordData = (key) => {
+    setKeyword(key)
+  }
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
+  
+
   return (
     <div className="App">
-      
-
       <BrowserRouter> 
-        <Navbar />
+        <Navbar keywordData={keywordData} />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/detail" element={<Detail />} />
-          <Route path="/search" element={<Search />} />
+          <Route path="/" element={<Home keywordData={keywordData} />} />
+          <Route path="/detail/:id" element={<Detail />} />
+          <Route path="/search/" element={<Search keyw={keyword} />} />
         </Routes>
         <Footer />
       </BrowserRouter>
-
-      
     </div>
   );
 }
