@@ -104,15 +104,15 @@ export default function Home({keywordData}) {
         </div> */}
 
         {/* Header */}
-        <header className='flex lg:flex-row flex-col items-center relative w-11/12 mx-auto mb-40 md:mb-10 lg:mb-12 lg:pb-14'>
+        <header className='flex lg:flex-row flex-col items-center relative w-11/12 mx-auto mb-72 md:mb-10 lg:mb-12 lg:pb-14'>
             {/* Header Image */}
             <div className='flex-1' data-aos="fade-right">
                 <img src={headerImg} alt="film list" className='w-10/12 blur-sm lg:blur-none opacity-40 lg:opacity-100 mx-auto' />
             </div>
 
             {/* Header Content */}
-            <div className='flex-1 absolute top-20 md:top-48 lg:top-0 lg:relative' data-aos="fade-left">
-                <h1 className='w-11/12 mx-auto lg:mx-0 leading-tight lg:leading-none text-5xl md:text-6xl lg:text-left text-center font-semibold lg:-mt-8'>
+            <div className='flex-1 absolute top-20 md:top-32 lg:top-0 lg:relative' data-aos="fade-left">
+                <h1 className='w-11/12 mx-auto  lg:mx-0 lg:-mt-8 leading-tight lg:leading-none text-5xl md:text-6xl lg:text-left text-center font-semibold'>
                     More Than <span className='bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-fuchsia-600'>10,000+</span> Movies  You Can Find Here
                 </h1>
 
@@ -137,7 +137,7 @@ export default function Home({keywordData}) {
 
         <main>
             {/* Popular Movies Section */}
-            <section className='mb-16 lg:mb-24' id='popular'>
+            <section className='mb-12 lg:mb-24' id='popular'>
                 <div data-aos="fade-up" data-aos-duration="500">
                     <h2 className='lg:px-2 text-2xl md:text-3xl font-medium'>Popular Movies</h2>
                 
@@ -147,15 +147,15 @@ export default function Home({keywordData}) {
                     modules={[Navigation]}
                     breakpoints={{
                         0: {
-                            slidesPerView: 3,
+                            slidesPerView: 2,
                             spaceBetweenSlides: 10
                         },
                         768: {
-                            slidesPerView: 4,
+                            slidesPerView: 3,
                             spaceBetweenSlides: 20
                         },
                         1024: {
-                            slidesPerView: 5,
+                            slidesPerView: 4,
                             spaceBetweenSlides: 50
                         },
                         1280: {
@@ -174,7 +174,7 @@ export default function Home({keywordData}) {
             </section>
             
             {/* Top Rated Movies Section */}
-            <section className='mb-16 lg:mb-24' id='top-rated'>
+            <section className='mb-12 lg:mb-24' id='top-rated'>
                 <div data-aos="fade-up" data-aos-duration="500">
                     <h2 className='lg:px-2 text-2xl md:text-3xl font-medium'>Top Rated Movies</h2>
 
@@ -185,15 +185,15 @@ export default function Home({keywordData}) {
                         modules={[Navigation]}
                         breakpoints={{
                             0: {
-                                slidesPerView: 3,
+                                slidesPerView: 2,
                                 spaceBetweenSlides: 10
                             },
                             768: {
-                                slidesPerView: 4,
+                                slidesPerView: 3,
                                 spaceBetweenSlides: 20
                             },
                             1024: {
-                                slidesPerView: 5,
+                                slidesPerView: 4,
                                 spaceBetweenSlides: 50
                             },
                             1280: {
@@ -223,15 +223,15 @@ export default function Home({keywordData}) {
                         modules={[Navigation]}
                         breakpoints={{
                             0: {
-                                slidesPerView: 3,
+                                slidesPerView: 2,
                                 spaceBetweenSlides: 10
                             },
                             768: {
-                                slidesPerView: 4,
+                                slidesPerView: 3,
                                 spaceBetweenSlides: 20
                             },
                             1024: {
-                                slidesPerView: 5,
+                                slidesPerView: 4,
                                 spaceBetweenSlides: 50
                             },
                             1280: {

@@ -64,7 +64,7 @@ export default function Search({keyw}) {
             
             <main className='mt-16 lg:mt-32'>
                 
-                <div className="mt-12 lg:mt-16 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 auto-rows-auto">
+                <div className="mt-12 lg:mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 auto-rows-auto">
                     {results.map(movie => {
                         return (
                             <MovieCard key={movie.id} movie={movie} />

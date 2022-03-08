@@ -164,15 +164,15 @@ export default function Detail() {
                             modules={[Navigation]}
                             breakpoints={{
                                 0: {
-                                    slidesPerView: 3,
+                                    slidesPerView: 2,
                                     spaceBetweenSlides: 10
                                 },
                                 768: {
-                                    slidesPerView: 4,
+                                    slidesPerView: 3,
                                     spaceBetweenSlides: 20
                                 },
                                 1024: {
-                                    slidesPerView: 5,
+                                    slidesPerView: 4,
                                     spaceBetweenSlides: 50
                                 },
                                 1280: {

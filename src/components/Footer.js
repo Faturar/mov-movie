@@ -41,7 +41,7 @@ function Footer() {
         </div>
         <div className='mt-16 lg:mt-20 flex flex-col-reverse lg:flex-row items-center'>
           <div className='text-center mx-12 lg:mx-0 mt-6'>
-            <p>&copy; 2021 Designed and Developed by Fatur Powered by TMDB</p>
+            <p>&copy; 2022 Designed and Developed by Fatur Powered by TMDB</p>
           </div>
           <div className='lg:ml-auto mx-auto lg:mx-0'>
             <ul className="space-x-8 lg:space-x-12 lg:mr-20 flex text-white">
