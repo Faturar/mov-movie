@@ -89,7 +89,7 @@ export default function Detail() {
             <main>
                 <div className='grid grid-rows-1 grid-cols-1 lg:grid-rows-none lg:grid-cols-3 mt-0 md:mt-16 lg:mt-0 mb-16 md:mb-12 xl:mb-28'>
                     {/* Poster */}
-                    <div className='m-auto w-56 md:w-56 lg:w-64 xl:w-72 mt-8 lg:-mt-8 xl:-mt-32 xl:ml-16' data-aos="fade-right" data-aos-duration="500">
+                    <div className='m-auto w-56 md:w-56 lg:w-64 xl:w-72 mt-8 lg:-mt-8 xl:-mt-28 xl:ml-16' data-aos="fade-right" data-aos-duration="500">
                         <img src={poster_path ? `https://image.tmdb.org/t/p/w300${poster_path}` : noposter} alt="" className='shadow-lg shadow-blue-700 rounded-lg'  />
                     </div>
 
