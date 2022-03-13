@@ -15,7 +15,7 @@ function Footer() {
             <Link to="/">
               <img src={logoName} alt="" className='h-10 mx-auto lg:mx-0' />
             </Link>
-            <p className='mt-8 w-80'>Platform that serves you to search movie information from all over the world.</p>
+            <p className='mt-8 w-96'>Platform that give you movie recomendation and search movie information.</p>
           </div>
           <div className='mt-12 lg:mt-0 mx-auto lg:mx-0 lg:ml-auto'>
             <ul className={`${location.pathname === '/' ? 'hidden lg:flex' : 'hidden'} space-x-8 lg:space-x-12 lg:mr-20 flex text-white `}>

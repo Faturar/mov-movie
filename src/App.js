@@ -38,7 +38,7 @@ function App() {
       <BrowserRouter> 
         <Navbar keywordData={keywordData} />
         <Routes>
-          <Route path="/" element={<Home keywordData={keywordData} />} />
+          <Route path="/" exact element={<Home keywordData={keywordData} />} />
           <Route path="/detail/:id" element={<Detail />} />
           <Route path="/search/" element={<Search keyw={keyword} />} />
         </Routes>

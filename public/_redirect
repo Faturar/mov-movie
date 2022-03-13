@@ -1,0 +1,4 @@
+/* /index.html 200
+
+/search            https://mov-movie.web.app/search   404
+/detail/:id        https://mov-movie.web.app/search/detail/:id   404

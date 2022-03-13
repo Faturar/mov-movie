@@ -646,28 +646,12 @@ h1, h2{
   margin-bottom: 3rem;
 }
 
-.mb-40{
-  margin-bottom: 10rem;
+.mb-72{
+  margin-bottom: 18rem;
 }
 
 .ml-4{
   margin-left: 1rem;
-}
-
-.mb-64{
-  margin-bottom: 16rem;
-}
-
-.mb-48{
-  margin-bottom: 12rem;
-}
-
-.mb-56{
-  margin-bottom: 14rem;
-}
-
-.mb-72{
-  margin-bottom: 18rem;
 }
 
 .block{
@@ -714,8 +698,8 @@ h1, h2{
   width: 6rem;
 }
 
-.w-80{
-  width: 20rem;
+.w-96{
+  width: 24rem;
 }
 
 .w-full{
@@ -754,6 +738,10 @@ h1, h2{
   width: 66.666667%;
 }
 
+.w-80{
+  width: 20rem;
+}
+
 .flex-1{
   flex: 1 1 0%;
 }
@@ -768,10 +756,6 @@ h1, h2{
 
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-3{
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-cols-2{
@@ -1069,14 +1053,6 @@ body {
 }
 
 @media (min-width: 768px){
-  .md\:top-48{
-    top: 12rem;
-  }
-
-  .md\:top-40{
-    top: 10rem;
-  }
-
   .md\:top-32{
     top: 8rem;
   }
@@ -1108,10 +1084,6 @@ body {
 
   .md\:w-56{
     width: 14rem;
-  }
-
-  .md\:grid-cols-4{
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:grid-cols-3{
@@ -1272,10 +1244,6 @@ body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-5{
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -1399,6 +1367,10 @@ body {
 
   .xl\:w-72{
     width: 18rem;
+  }
+
+  .xl\:w-96{
+    width: 24rem;
   }
 
   .xl\:grid-cols-6{
