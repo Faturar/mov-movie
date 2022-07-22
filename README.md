@@ -1,5 +1,5 @@
 # Mov Movie
-Website to give you movie recomendation and find some movie information
+Just a personal project for stud. Website that give you movie recomendation by popularity, top rated and more. This website allows you to search some movie information, this website have 10.000+ movie information for you.
 
 ## Techstack
 - React JS
