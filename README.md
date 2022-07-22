@@ -5,3 +5,6 @@ Just a personal project for study. Website that give you movie recomendation by 
 - React JS
 - Tailwind CSS
 - Firebase
+
+## Library
+- AOS
