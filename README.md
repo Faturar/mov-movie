@@ -11,5 +11,4 @@ Just a personal project for study. Website that give you movie recomendation by 
 
 
 
-
-Faturar
+If you find any bug in this website please report to me.
