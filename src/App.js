@@ -19,8 +19,6 @@ import Home from './pages/Home'
 import Detail from './pages/Detail'
 import Search from './pages/Search'
 
-
-
 function App() {
   const [keyword, setKeyword] = useState('')
 

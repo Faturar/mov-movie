@@ -15,11 +15,6 @@ import MovieCard from '../components/MovieCard'
 // Images
 import headerImg from '../assets/img/header-img.png'
 import eclipse from '../assets/img/eclipse8.svg'
-import eclipse1 from '../assets/img/eclipse1.svg'
-import eclipse2 from '../assets/img/eclipse2.svg'
-import eclipse3 from '../assets/img/eclipse3.svg'
-import eclipse4 from '../assets/img/eclipse4.svg'
-import eclipse5 from '../assets/img/eclipse5.svg'
 
 export default function Home({keywordData}) {
     const [popular, setPopular] = useState([]);
