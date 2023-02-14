@@ -7,7 +7,6 @@ https://mov-movie.netlify.app
 ## Techstack
 - React JS
 - Tailwind CSS
-- Firebase
 
 ## Library
 - AOS
