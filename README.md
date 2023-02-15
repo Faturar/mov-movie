@@ -1,7 +1,7 @@
 # Mov Movie
 
 ## Screenshoot
-![Mov Movie Home](ppp "Dashboard")
+![Mov Movie](https://github.com/Faturar/mov-movie/blob/main/screenshoot.png "Mov Movie")
 
 ## Deskripsi
 Just a personal project for study. Website that give you movie recomendation by popularity, top rated and more. This website allows you to search some movie information from TMDB API.
